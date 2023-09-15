@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 import {userSchema} from "../validations/UserValidations";
 import {useForm} from "react-hook-form";
@@ -22,42 +22,42 @@ function MyForm(){
         <div className = "signup-container">
             <Form onSubmit = {handleSubmit(onSubmit)}>
                 <Form.Group className = "mb-3" controlId = "formBasicFaveGroup">
-                <Form.Control type = "text" placegolder = "Favorite KPOP Group" {...register("favegroup")} />
+                <Form.Control type = "text" placeholder = "Favorite KPOP Group" {...register("favegroup")} />
                 <p className = "error">{errors.favegroup?.message}</p>
                 </Form.Group>
 
                 <Form.Group className = "mb-3" controlId = "formBasicBias">
-                <Form.Control type = "text" placegolder = "Bias" {...register("bias")} />
+                <Form.Control type = "text" placeholder = "Bias" {...register("bias")} />
                 <p className = "error">{errors.bias?.message}</p>
                 </Form.Group>
 
                 <Form.Group className = "mb-3" controlId = "formBasicBiasWrecker">
-                <Form.Control type = "text" placegolder = "Bias Wrecker" {...register("biaswrecker")} />
+                <Form.Control type = "text" placeholder = "Bias Wrecker" {...register("biaswrecker")} />
                 <p className = "error">{errors.biaswrecker?.message}</p>
                 </Form.Group>
 
                 <Form.Group className = "mb-3" controlId = "formBasicFaveAlbum">
-                <Form.Control type = "text" placegolder = "Favorite Album" {...register("favealbum")} />
+                <Form.Control type = "text" placeholder = "Favorite Album" {...register("favealbum")} />
                 <p className = "error">{errors.age?.message}</p>
                 </Form.Group>
 
                 <Form.Group className = "mb-3" controlId = "formBasicFaveTitleTrackr">
-                <Form.Control type = "text" placegolder = "Favorite Ttile Track" {...register("favett")} />
+                <Form.Control type = "text" placeholder = "Favorite Ttile Track" {...register("favett")} />
                 <p className = "error">{errors.favett?.message}</p>
                 </Form.Group>
 
                 <Form.Group className = "mb-3" controlId = "formBasicFaveBside">
-                <Form.Control type = "text" placegolder = "Favorite B-Side" {...register("favebside")} />
+                <Form.Control type = "text" placeholder = "Favorite B-Side" {...register("favebside")} />
                 <p className = "error">{errors.favebside?.message}</p>
                 </Form.Group>
 
                 <Form.Group className = "mb-3" controlId = "formBasicFaveEra">
-                <Form.Control type = "text" placegolder = "Favorite Era" {...register("faveera")} />
+                <Form.Control type = "text" placeholder = "Favorite Era" {...register("faveera")} />
                 <p className = "error">{errors.faveera?.message}</p>
                 </Form.Group>
 
                 <Form.Group className = "mb-3" controlId = "formBasicFaveComeback">
-                <Form.Control type = "text" placegolder = "Favorite Comeback" {...register("favecomeback")} />
+                <Form.Control type = "text" placeholder = "Favorite Comeback" {...register("favecomeback")} />
                 <p className = "error">{errors.favecomeback?.message}</p>
                 </Form.Group>
 
