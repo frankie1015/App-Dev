@@ -5,7 +5,7 @@ import SEVENTEEN from "../img/SEVENTEEN.jpeg";
 function KPOP(){
     return (
         <div className = "d-flex align-items-center justify-content-center">
-            <img src = "SEVENTEEN" alt = "seventeen" />
+            <img src = {SEVENTEEN} alt = "seventeen" />
             <p>Seventeen is my all time favorite kpop group.</p>
             <p>Some fun facts about the group: </p>
             <ul>

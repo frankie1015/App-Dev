@@ -15,7 +15,7 @@ function App() {
     <div>
     
       <Routes> 
-        <Route path = "/" element = {<Home />} />
+        <Route index path = "/" element = {<Home />} />
         <Route path = "/about" element = {<AboutMe />} />
         <Route path = "/form" element = {<FormLayout/>} />
         <Route path = "/kpop" element = {<KPOP/>} />
