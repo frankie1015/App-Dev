@@ -17,7 +17,7 @@ function App() {
     <div>
       <SkeletonTheme baseColor="#D2D4DB" highlightColor="#F9FAFC">
       <Routes> 
-        <Route index path = "/" element = {<Home />} />
+        <Route index path = "/" element = {<MainLayout />} />
         <Route path = "/about" element = {<AboutMe />} />
         <Route path = "/form" element = {<FormLayout/>} />
         <Route path = "/kpop" element = {<KPOP/>} />
