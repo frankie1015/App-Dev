@@ -6,8 +6,11 @@ import Form from 'react-bootstrap/Form';
 import {userSchema} from "../validations/UserValidations";
 import {useForm} from "react-hook-form";
 import {yupResolver} from "@hookform/resolvers/yup";
+import {useNavigate} from 'react-router-dom';
 
 function MyForm(){
+
+    const navigate = useNavigate();
     const {
         register, handleSubmit, formState : {errors}, 
     } = useForm ({
@@ -16,6 +19,7 @@ function MyForm(){
 
     const onSubmit = (data) => {
         console.log(data);
+        navigate('/kpop');
     };
 
     return (
